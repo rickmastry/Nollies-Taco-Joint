@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico|Playball|Public+Sans:400,700,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rye&display=swap');
 
 /*
 font-family: 'Pacifico', cursive;
 font-family: 'Playball', cursive;
 font-family: 'Public Sans', sans-serif;
+font-family: 'Rye', cursive;
 */
 
 :root {
@@ -18,6 +20,9 @@ font-family: 'Public Sans', sans-serif;
     --mainBlue: rgb(44, 163, 184);
     --mainGreen: rgb(92, 194, 172);
     --secondaryColor: rgb(250, 232, 192);
+    --mainGold: #D07839;
+    --secondaryGold: rgb(151, 64, 1);
+    --thirdGold: rgb(231, 171, 127);
   }
 
 * {
@@ -46,7 +51,7 @@ body {
     width:100%;
     color: var(--mainBlack);
     /*background: var(--mainRed);*/
-    background: var(--mainGreen);
+    background: var(--secondaryGold);
     font-family: 'Public sans', sans-serif;
   }
 
@@ -92,11 +97,11 @@ html {
 }
 
 .navbar-brand {
+    font-family: 'Rye', cursive;
     height: 50px;
     padding: 15px 15px;
     font-size: 18px;
     line-height: 20px;
-    font-family: 'Playball', cursive;
     font-size: 34px !important;
     text-decoration: none;
     color: white !important;
@@ -109,18 +114,18 @@ html {
     font-size: 1rem;
     padding: .5rem .5rem;
     cursor: pointer;
-    font-family: 'Public Sans', sans-serif;
+    font-family: 'Rye', cursive;
     transition: var(--mainTransition);
    
 }
 
 .navactive{
     /*border-bottom: 1px solid #96E16B;*/
-    border-bottom: var(--mainGreen)1px solid;
+    border-bottom: var(--mainGold)1px solid;
 }
 
   .navigation:hover {
-    color: var(--mainGreen) !important;
+    color: var(--mainGold) !important;
     
   }
 
@@ -169,16 +174,20 @@ html {
 .banner-title{
     margin-bottom: 3rem;
     color: var(--mainWhite);
-    font-family: 'Playball', cursive;
+    font-family: 'Rye', cursive;
     font-size: 110px;
-    font-weight: 900;
+    font-weight: 700;
+    -webkit-text-stroke: .5px;
+    -webkit-text-stroke-color: #D07839;
 }  
 .banner-sub-title{
     font-size: 2rem;
     margin-bottom: 3rem;
     color: var(--mainWhite);
     font-style: italic;
-    font-family: 'Public Sans', sans-serif;
+    font-family: 'Rye', cursive;
+    -webkit-text-stroke: .5px;
+    -webkit-text-stroke-color: #D07839;
 }  
 
 .hero {
@@ -206,8 +215,9 @@ html {
   color: var(--mainWhite);
   letter-spacing: var(--secondarySpacing);
   font-style: italic;
-  font-family: 'Public Sans', sans-serif;
-  -webkit-text-stroke: 1px black;
+  font-family: 'Rye', cursive;
+  -webkit-text-stroke: .5px;
+  -webkit-text-stroke-color: #D07839;
  } 
 
  #story{
@@ -282,7 +292,8 @@ p.drink-text {
 }
 
 .sectionid-contact{
-  font-family: 'Playball', cursive;
+  color: var(--mainWhite);
+  font-family: 'Rye', cursive;
   width: 90vw;
   margin: 100px auto 100px;
   max-width: 1170px;
@@ -290,6 +301,7 @@ p.drink-text {
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 1.5rem;
   grid-row-gap: 2rem;
+ 
 }
 
 #sectionid-header{
@@ -302,7 +314,7 @@ p.drink-text {
 }
 
 .email-info:hover{
-  color:var(--mainRed) !important;
+  color:var(--mainGreen) !important;
 }
 
 #address{
@@ -341,7 +353,7 @@ footer{
  }
  
  a.icons:hover{
-  color: var(--mainGreen);
+  color: var(--mainGold);
  }
 
  .products {
@@ -392,7 +404,7 @@ footer{
 .product h4 {
   margin-top: 0.7rem;
   letter-spacing: var(--mainSpacing);
-  color: var(--primaryColor);
+  color: var(--mainGreen);
   text-align: center;
 }
 
@@ -400,7 +412,7 @@ footer{
   position: absolute;
   top: 70%;
   right: 0;
-  background: var(--primaryColor);
+  background: var(--mainGreen);
   border: none;
   text-transform: uppercase;
   padding: 0.5rem 0.75rem;
